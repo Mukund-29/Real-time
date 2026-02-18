@@ -1,0 +1,67 @@
+.presence-indicator {
+  background: white;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.presence-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.presence-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+}
+
+.presence-count {
+  background: #4CAF50;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.presence-users {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.presence-user {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 8px;
+  border-radius: 16px;
+  border: 2px solid;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.presence-user.current {
+  background: rgba(76, 175, 80, 0.1);
+}
+
+.presence-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.presence-name {
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+}

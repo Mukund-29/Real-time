@@ -1,0 +1,19 @@
+name: Deploy to Railway
+
+on:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Deploy to Railway
+        uses: bervProject/railway-deploy@v0.3.3
+        with:
+          railway_token: ${{ secrets.RAILWAY_TOKEN }}
+          service: backend
+          # Uncomment and configure if you want automatic deployment
+          # railway_project_id: ${{ secrets.RAILWAY_PROJECT_ID }}
