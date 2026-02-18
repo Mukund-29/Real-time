@@ -34,6 +34,33 @@ A Kanban-style task board with real-time collaboration, conflict resolution, and
 - Docker and Docker Compose (recommended)
 - PostgreSQL 15+ (if not using Docker)
 
+## Database Setup
+
+The database schema is automatically created on first run. For manual setup, see [backend/src/db/README.md](./backend/src/db/README.md).
+
+### Quick Database Setup
+
+**Using Docker (Automatic):**
+```bash
+docker-compose up  # Database is created automatically
+```
+
+**Manual Setup:**
+```bash
+# Create database
+createdb taskboard
+
+# Run initialization script
+psql -U postgres -d taskboard -f backend/src/db/init.sql
+```
+
+### Database Schema
+
+- **tasks** - Stores all Kanban tasks with versioning for conflict resolution
+- **users** - Tracks connected users for presence indicators
+
+See `backend/src/db/schema.sql` for the complete schema definition.
+
 ## Quick Start
 
 ### Using Docker Compose (Recommended)
