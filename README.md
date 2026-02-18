@@ -301,6 +301,16 @@ See [DESIGN.md](./DESIGN.md) for detailed conflict resolution strategy.
 
 This project is part of a take-home assignment.
 
+## Documentation
+
+- **[RUNBOOK.md](./RUNBOOK.md)** - Complete architecture, API reference, and operational procedures
+- **[DESIGN.md](./DESIGN.md)** - Design decisions and conflict resolution strategy
+- **[DEPLOYMENT.md](./DEPLOYMENT.md)** - Deployment guide for various platforms
+- **[QUICK_START.md](./QUICK_START.md)** - Quick setup guide
+
 ## Support
 
-For issues or questions, please refer to the DESIGN.md file for architectural details.
+For issues or questions, please refer to:
+- **RUNBOOK.md** - For API details, architecture, and troubleshooting
+- **DESIGN.md** - For architectural decisions and conflict resolution
+- **DEPLOYMENT.md** - For deployment-related issues
